@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  position: fixed;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover {
+  color: #38bdf8;
+}
+
+/* Content */
+.content {
+  margin-left: 240px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* Panels */
+.panel {
+  display: none;
+  opacity: 0;
+}
+
+.panel.active {
+  display: block;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Skills */
+.bar {
+  background: #1e293b;
+  margin: 10px 0;
+}
+.bar span {
+  display: block;
+  background: #38bdf8;
+}
+
+/* Cursor */
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: white;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Canvas */
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

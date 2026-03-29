@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hiro | Portfolio</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+<div class="cursor"></div>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>Hiro</h2>
+  <ul>
+    <li onclick="showSection('home')">Home</li>
+    <li onclick="showSection('about')">About</li>
+    <li onclick="showSection('skills')">Skills</li>
+    <li onclick="showSection('projects')">Projects</li>
+    <li onclick="showSection('proof')">Proof</li>
+    <li onclick="showSection('contact')">Contact</li>
+  </ul>
+</div>
+
+<!-- Content -->
+<div class="content">
+
+<section id="home" class="panel active">
+  <h1 class="fade">AI Developer</h1>
+  <p class="fade">Building smart systems</p>
+</section>
+
+<section id="about" class="panel">
+  <h2>About</h2>
+  <p>I build automation tools and AI systems that solve real problems.</p>
+</section>
+
+<section id="skills" class="panel">
+  <h2>Skills</h2>
+  <div class="bar"><span style="width:90%">Python</span></div>
+  <div class="bar"><span style="width:80%">JavaScript</span></div>
+</section>
+
+<section id="projects" class="panel">
+  <h2>Projects</h2>
+  <div id="projects-container"></div>
+</section>
+
+<section id="proof" class="panel">
+  <h2>Proof</h2>
+  <button onclick="runDemo()">Run Demo</button>
+  <pre id="demo-output"></pre>
+</section>
+
+<section id="contact" class="panel">
+  <h2>Contact</h2>
+  <form action="https://formspree.io/f/your-id" method="POST">
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
